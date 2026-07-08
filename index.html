@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Scratch That — Privacy Policy</title>
+<title>Scratch that — Privacy Policy</title>
 <style>
   :root { --bg:#FAF7F2; --ink:#1C1B18; }
   * { box-sizing:border-box; }
@@ -14,7 +14,9 @@
   h1 { font:400 34px/1.2 "New York",Georgia,"Times New Roman",serif; margin:0 0 6px; }
   .sub { color:rgba(28,27,24,.55); margin:0 0 40px; font-size:15px; }
   h2 { font-size:15px; letter-spacing:.02em; text-transform:uppercase; color:rgba(28,27,24,.55); margin:36px 0 8px; }
-  p { margin:0 0 16px; }
+  p, li { margin:0 0 16px; }
+  ul { padding-left:22px; margin:0 0 16px; }
+  li { margin-bottom:8px; }
   strong { font-weight:600; }
   a { color:inherit; }
   .foot { margin-top:56px; font-size:14px; color:rgba(28,27,24,.5); }
@@ -22,18 +24,87 @@
 </head>
 <body>
   <main class="wrap">
-    <h1>Scratch That</h1>
+    <h1>Scratch that</h1>
     <p class="sub">Privacy Policy</p>
-    <p><strong>Scratch That collects nothing.</strong> There is no account, no login, no analytics, no tracking, and no ads. We have no servers, and we never see what you scratch or send.</p>
+
+    <p><strong>We can&rsquo;t read your messages and we can&rsquo;t see
+    your photos.</strong> Not &ldquo;won&rsquo;t&rdquo; &mdash;
+    can&rsquo;t. There is no account, no login, no analytics, no
+    tracking, and no ads. This page explains plainly what happens to
+    what you write and what you send.</p>
+
     <h2>No data reaches us</h2>
-    <p>The app has no backend. The lines you&rsquo;ve recently seen are stored only on your own device, so the app doesn&rsquo;t repeat itself. Nothing is uploaded to us, ever.</p>
+    <p>Scratch that has no accounts and no analytics. We don&rsquo;t
+    know who you are, who you message, or how often you use the app.
+    Local counters (like which lines you&rsquo;ve recently seen) exist
+    only on your device and never leave it.</p>
+
     <h2>Messages you send</h2>
-    <p>Cards you send travel through Apple&rsquo;s iMessage, exactly like any other message. We are not involved in their delivery and cannot read them.</p>
-    <h2>Photos</h2>
-    <p>The app only touches a photo if you explicitly choose one to share, using the system share sheet. Nothing is uploaded to us.</p>
+    <p>The text of a scratch card travels inside the iMessage itself,
+    protected by Apple&rsquo;s iMessage encryption. It is never sent
+    to us or stored on any server of ours. We have no copy.</p>
+
+    <h2>Photos behind the foil</h2>
+    <p>You can hide a photo behind the silver. Here is exactly how
+    that works:</p>
+    <ul>
+      <li>The photo is <strong>encrypted on your device</strong>
+      (AES&#8209;256) before it goes anywhere.</li>
+      <li>The encrypted copy is stored temporarily in Apple&rsquo;s
+      iCloud (CloudKit) so the recipient can fetch it.</li>
+      <li>The <strong>decryption key travels only inside the iMessage
+      itself</strong> &mdash; it is never stored with the photo and
+      never reaches us. Only the person you sent the card to can ever
+      decrypt it. We can&rsquo;t. Nobody in between can.</li>
+      <li>The encrypted cloud copy <strong>deletes itself after 30
+      days</strong>.</li>
+      <li>Once opened, the photo is kept on the recipient&rsquo;s
+      device so the card keeps working, protected by iOS file
+      encryption.</li>
+    </ul>
+    <p>One honest caveat: like every messaging app, we can&rsquo;t
+    prevent a recipient from taking a screenshot. A scratch card is a
+    gift, not a vault &mdash; send accordingly.</p>
+
+    <h2>Reporting a photo</h2>
+    <p>If someone sends you a photo you shouldn&rsquo;t have received,
+    long&#8209;press it and choose <em>report this photo</em>. That
+    opens an email to us containing the photo&rsquo;s storage
+    reference and its key &mdash; you are choosing to show us that one
+    photo so we can review it and remove it. This is the only way any
+    photo can ever become visible to us, and it is always the
+    recipient&rsquo;s choice. Material that violates law or our rules
+    is removed within 24 hours; content involving minors is reported
+    to the relevant authorities, including NCMEC.</p>
+
+    <h2>What we store, where</h2>
+    <ul>
+      <li><strong>On our servers:</strong> nothing. We don&rsquo;t run
+      any.</li>
+      <li><strong>In Apple&rsquo;s iCloud (our CloudKit
+      container):</strong> encrypted photo blobs &mdash; unreadable
+      without the key we never have &mdash; each with an expiry date.
+      No names, no identifiers, no message text.</li>
+      <li><strong>On your device:</strong> drafts, local settings,
+      local counters, and opened photos &mdash; inside the app&rsquo;s
+      sandbox, none of it transmitted.</li>
+    </ul>
+
     <h2>No third parties</h2>
-    <p>We share nothing with anyone, because we collect nothing in the first place.</p>
-    <p class="foot">Questions? <a href="mailto:mathias@mindact.ai">mathias@mindact.ai</a><br>Last updated: July 2026 &middot; Mindact Solutions AB</p>
+    <p>No third-party SDKs, no data sharing, no selling &mdash; there
+    is nothing to share or sell.</p>
+
+    <h2>Your rights</h2>
+    <p>Scratch that is made by Mindact Solutions AB, Sweden. Since we
+    hold no personal data about you, there is nothing for us to hand
+    over or lose &mdash; where GDPR applies you retain all your usual
+    rights, and deletion is enforced by design through the 30&#8209;day
+    expiry above. If we ever change how any of this works, this page
+    changes first &mdash; we will never quietly start collecting what
+    we today can&rsquo;t see.</p>
+
+    <p class="foot">Questions? <a href="mailto:mathias@mindact.ai">mathias@mindact.ai</a><br>
+    Last updated: 8 July 2026 &middot; Mindact Solutions AB</p>
   </main>
 </body>
 </html>
